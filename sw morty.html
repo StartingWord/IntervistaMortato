@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascolta l’audio</title>
+
+  <!-- Font simile allo stile StartingWork -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --text: #1e1e1e;
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+    }
+
+    .container {
+      background: var(--card);
+      padding: 3rem 2.5rem;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+    }
+
+    .accent {
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Ascolta l’audio</h1>
+    <p>Premi play per iniziare l’ascolto</p>
+
+    <!-- SOSTITUISCI src con il link del tuo audio -->
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Il tuo browser non supporta l’audio.
+    </audio>
+
+    <footer>
+      Progetto <span class="accent">Starting</span> style
+    </footer>
+  </div>
+
+</body>
+</html>
